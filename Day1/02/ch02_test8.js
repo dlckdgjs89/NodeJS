@@ -16,3 +16,4 @@ var basename = path.basename(filename);
 var extname = path.extname(filename);
 
 console.log('디렉터리 : %s, 파일이름 : %s, 확장자 %s', dirname, basename, extname);
+dd
