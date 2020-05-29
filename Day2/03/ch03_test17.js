@@ -9,6 +9,7 @@ function add(a, b, callback) {
 	callback(result);
 
 	var count = 0;
+    // 함수안에 함수를 또 사용하여 함수안에 변수에 접근하는 방식
 	var history = function() {
 		count++;
 		return count + ' : ' + a + ' + ' + b + ' = ' + result;
