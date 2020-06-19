@@ -6,6 +6,8 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
+    "crypto": "^1.0.1",
+    "errorhandler": "^1.5.1",
     "express": "^4.17.1",
     "express-error-handler": "^1.1.0",
     "express-session": "^1.17.1",
@@ -13,6 +15,7 @@
     "moment": "^2.26.0",
     "mongodb": "^3.5.8",
     "mongoose": "^5.9.18",
+    "mysql": "^2.18.1",
     "nconf": "^0.10.0",
     "path": "^0.12.7",
     "winston": "^3.2.1",
