@@ -5,8 +5,10 @@
   "main": "calc.js",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.5",
     "crypto": "^1.0.1",
+    "djs": "0.0.2",
     "errorhandler": "^1.5.1",
     "express": "^4.17.1",
     "express-error-handler": "^1.1.0",
@@ -17,7 +19,10 @@
     "mongoose": "^5.9.18",
     "mysql": "^2.18.1",
     "nconf": "^0.10.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
     "path": "^0.12.7",
+    "pug": "^3.0.0",
     "winston": "^3.2.1",
     "winston-daily-rotate-file": "^4.4.2"
   },
