@@ -1,7 +1,7 @@
 /**
- * JsonRpc 사용하기
+ * 모바일 서버 만들기
  *
- * JSON-RPC를 이용한 서버 모듈 구성
+ * 단말 관리와 푸시 메시지 전송을 위한 기능 구현
  *
  * @date 2016-11-10
  * @author Mike
@@ -40,12 +40,7 @@ var database = require('./database/database');
 // 모듈로 분리한 라우팅 파일 불러오기
 var route_loader = require('./routes/route_loader');
 
-// JsonRpc 핸들러 로딩을 위한 파일 불러오기
-var handler_loader = require('./handlers/handler_loader');
 
-
-// JsonRpc 사용을 위한 jayson 모듈 불러오기
-var jayson = require('jayson');
 
 
 // 익스프레스 객체 생성
@@ -107,21 +102,10 @@ userPassport(router, passport);
 
 
 
-//===== jayson 미들웨어 사용 =====//
-
-//JSON-RPC 핸들러 정보를 읽어들여 핸들러 설정
-var jsonrpc_api_path = config.jsonrpc_api_path || '/api';
-handler_loader.init(jayson, app, jsonrpc_api_path);
-
-console.log('JSON-RPC를 [' + jsonrpc_api_path + '] 패스에서 사용하도록 설정함.');
-
-
-
-
 //===== 404 에러 페이지 처리 =====//
 var errorHandler = expressErrorHandler({
  static: {
-   '404': './Day7/11/public/404.html'
+   '404': './public/404.html'
  }
 });
 
