@@ -106,7 +106,7 @@ userPassport(router, passport);
 //===== 404 에러 페이지 처리 =====//
 var errorHandler = expressErrorHandler({
  static: {
-   '404': './Day5/09_2/public/404.html'
+   '404': './Day9/14/public/404.html'
  }
 });
 
